@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* primary color: #91B2C7 */
+
+:root{
+    --main-color:#91B2C7;
+    --gray-color:#838A8E ;
+    --off-white:#F3F4F6;
+    --blog-heading: #657c8b;
+    --hover-color: #81bde6;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+hr{
+    border: dotted #EAF6F6 8px;
+    border-bottom: none;
+    width: 5%;
+    
+}
+
+h1{
+    font-size: 2rem;
+}
+
+/* containers */
+
+.container{
+   padding: 0 1rem;
+}
+
+.container-center{
+    margin: auto;
+}
+
+.technology{
+    margin-top: 2rem;
+    display: flex;
+}
+
+.technology i{
+    font-size: 80px;
+    margin: 1rem 1rem auto auto;
+}
+
+
+/* links */
+
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+        
+}
+
+.link-primary{
+    border: solid 1px transparent;
+    background: var(--main-color);
+    color: white;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.link-secondary{
+    border: solid 1px var(--main-color);
+    border-radius: 0.5rem;
+    color: var(--main-color);
+    margin: 0.5rem;
+}
+
+.link-primary:hover{
+    border: solid 1px var(--main-color);
+    color: var(--main-color);
+    background: white;
+}
+
+.link-secondary:hover{
+    background: var(--main-color);
+    color: white;
+}
+
+/* lists */
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-inline-item{
+    display: inline;
+    padding: 0 1rem;
+}
+
+/* navigation  */
+
+.navigation{
+    background-color: var(--main-color);
+    padding: 1rem 0 0.1em 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.navigation .nav-brand{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.navigation .link{
+    color: white;
+    
+}
+
+.navigation .nav-pills{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation .active a{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    }
+
+/* header */
+
+.hero{
+    padding: 2rem;
+}
+
+.hero .hero-img{
+    max-width: 296px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading{
+    color: var(--gray-color);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hero .hero-heading .cut{
+    color: var(--main-color);
+}
+/* Sections */
+
+.section{
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.ow{
+    background-color: var(--off-white);
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--main-color);
+    padding: 2rem;
+    text-align:center;
+    color: white;
+    border-bottom-left-radius: 1rem;
+}
+
+.footer .link{
+    color: white
+}
+
+.footer ul{
+    padding-inline-start: 0rem;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.fa-envelope:hover{
+    color: #333;
+}
+
+.fa-linkedin:hover{
+    color: #2867B2;
+}
+
+
+
+.fa-github:hover{
+    color: #333;
+}
+
+/* styling blog page */
+
+.blog-div, .project-section{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:42rem;
+    padding:2.625rem 1.3125rem;
+}
+
+
+/* Style for blog page */
+
+.blogs-anchor{
+    text-decoration: none;
+    color: var(--blog-heading)
+}
+
+.blogs-h1{
+    margin-block-end: 0.2em;
+}
+
+small{
+    padding: 1px;
+}
+
+
+/* Style for project */
+
+.project-link-primary{
+    margin: 0 ;
+}
+
+
+/*Media Query*/
+
+
+@media screen and (max-width: 600px) {
+   .technology{
+       display: flex;
+       flex-direction: column;
+   }
+   .technology i{
+       margin: 0.5rem auto;
+   }
+    }
+
+    /* Add this to your existing styles.css or create a new stylesheet */
+
+/* Portfolio Styling */
+
+.portfolio-div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 42rem;
+    padding: 2.625rem 1.3125rem;
+}
+
+.college-name {
+    color: var(--blog-heading);
+    font-size: x-large;
+}
+
+.college-year {
+    font-size: large;
+    color: var(--blog-heading);
+}
+
+/* Style Portfolio Sections */
+
+.portfolio-h1 {
+    display: flex;
+    justify-content: center;
+    margin-block-end: 0.2em;
+    color: var(--blog-heading);
+}
+
+.small {
+    color: var(--gray-color);
+}
+
+/* Additional Styling for Experience Section */
+
+.experience-div {
+    margin-bottom: 2rem;
+}
+
+.experience-div h1 {
+    color: var(--blog-heading);
+}
+
+.experience-div small {
+    color: var(--gray-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.experience-div p {
+    margin-bottom: 1rem;
+}
+
+.experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-item {
+    margin-bottom: 1rem;
+}
+
+.experience-item h2 {
+    color: var(--blog-heading);
+}
+
+.experience-item small {
+    color: var(--gray-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px
+}
+
+.college-header {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experience-header h2 {
+    margin: 0;
+}
+
+/* Additional Styling for Skills Section */
+
+.skills-div {
+    margin-bottom: 2rem;
+}
+
+.skills-div h1 {
+    color: var(--blog-heading);
+}
+
+.skills-div ul {
+    padding-inline-start: 0;
+}
+
+.skills-div li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Additional Styling for Projects Section */
+
+.projects-div {
+    margin-bottom: 2rem;
+}
+
+.projects-div h1 {
+    color: var(--blog-heading);
+}
+
+.projects-div .project-item {
+    margin-bottom: 1rem;
+}
+
+/* Additional Styling for Achievements Section */
+
+.achievements-div {
+    margin-bottom: 2rem;
+}
+
+.achievements-div h1 {
+    color: var(--blog-heading);
+}
+
+.achievements-div .achievement-item {
+    margin-bottom: 1rem;
+}
+
+/* Add this to your existing styles.css or create a new stylesheet */
+
+.coding-profile-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.coding-profile-list li {
+    margin-right: 1rem;
+}
+
+.achievement-list {
+    list-style: disc;
+    padding: 0;
+    margin-top: 35px;
+    color: var(--blog-heading);
+}
+
+.achievement-list li {
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.coding-profile-link {
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+    font-size: 20px;
+}
+
+.coding-profile-link:hover {
+    color: #2867B2;
+}
+
+.coding-profile-link:before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    position: absolute;
+    left: -1rem;
+    top: 50%; /* Add this line to center the dot vertically */
+    transform: translateY(-50%); 
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}

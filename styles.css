@@ -402,6 +402,14 @@ small{
     font-size: large;
 }
 
+.experience-list {
+    list-style: disc;
+}
+
+.experience-list li{
+    margin-top: 8px;
+}
+
 .coding-profile-link {
     text-decoration: none;
     color: var(--main-color);
